@@ -1,4 +1,4 @@
-import scipy.stats
+ï»¿import scipy.stats
 import streamlit as st
 import time
 
@@ -6,7 +6,7 @@ st.header('Lanzar una moneda')
 
 chart = st.line_chart([0.5])
 
-def toss_coin(n): # función que emula el lanzamiento de una moneda
+def toss_coin(n): # funciÃ³n que emula el lanzamiento de una moneda
 
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
 
@@ -24,7 +24,7 @@ def toss_coin(n): # función que emula el lanzamiento de una moneda
 
     return mean
 
-number_of_trials = st.slider('¿Número de intentos?', 1, 1000, 10)
+number_of_trials = st.slider('Â¿NÃºmero de intentos?', 1, 1000, 10)
 start_button = st.button('Ejecutar')
 
 if start_button:
